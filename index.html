@@ -2,11 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
     <title>Cameron Nazemi!</title>
+    <link rel="shortcut icon" type="image/png" href="Favicon.png"/>
   </head>
   <body>
+    <center>
     <h1>Hi I'm Cameron Nazemi!</h1>
+    <img src="compsci.jfif" alt="CompSci">
     <p>I’m a junior Computer Science student who is very passionate about software engineering and development. I’m seeking to apply the Computer Science skills developed during my experiences to help improve the world we live in.</p>
+    </center>
     <p>My hobbies:
         <ul>
             <li>Making apps</li>
@@ -16,5 +21,34 @@
             <li>Playing Rocket League</li>
           </ul>
     </p>
+    <button onclick = "GFG_Fun()">
+        click here
+    </button>
+    <p id = "GFG_DOWN" style =
+        "color: green; font-size: 24px; font-weight: bold;">
+    </p>
+    <script>
+        var el_down = document.getElementById("GFG_DOWN");
+        function GFG_Fun() {
+              
+            // Create anchor element.
+            var a = document.createElement('a'); 
+              
+            // Create the text node for anchor element.
+            var link = document.createTextNode("Link to my apps!");
+              
+            // Append the text node to anchor element.
+            a.appendChild(link); 
+              
+            // Set the title.
+            a.title = "Link to my apps!"; 
+              
+            // Set the href property.
+            a.href = "https://apps.apple.com/us/developer/cameron-nazemi/id1470818209"; 
+              
+            // Append the anchor element to the body.
+            document.body.appendChild(a); 
+        }
+    </script> 
   </body>
 </html>
